@@ -1,0 +1,17 @@
+// vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import Inspect from "vite-plugin-inspect";
+import HotExport from "vite-plugin-hot-export";
+import svgr from "vite-plugin-svgr";
+var vite_config_default = defineConfig({
+  plugins: [HotExport(), Inspect(), react(), svgr({
+    svgrOptions: {
+      icon: true
+    }
+  })]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gJ3ZpdGUnXG5pbXBvcnQgcmVhY3QgZnJvbSAnQHZpdGVqcy9wbHVnaW4tcmVhY3QnXG5pbXBvcnQgSW5zcGVjdCBmcm9tICd2aXRlLXBsdWdpbi1pbnNwZWN0J1xuaW1wb3J0IEhvdEV4cG9ydCBmcm9tICd2aXRlLXBsdWdpbi1ob3QtZXhwb3J0J1xuaW1wb3J0IHN2Z3IgZnJvbSAndml0ZS1wbHVnaW4tc3Zncidcbi8vIGh0dHBzOi8vdml0ZWpzLmRldi9jb25maWcvXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoe1xuICBwbHVnaW5zOiBbSG90RXhwb3J0KCksIEluc3BlY3QoKSwgcmVhY3QoKSwgc3Zncih7XG4gICAgc3Znck9wdGlvbnM6IHtcbiAgICAgIGljb246IHRydWUsXG4gICAgICAvLyAuLi5zdmdyIG9wdGlvbnMgKGh0dHBzOi8vcmVhY3Qtc3Znci5jb20vZG9jcy9vcHRpb25zLylcbiAgICB9LFxuICB9KV0sXG59LFxuKVxuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQSxJQUFPLHNCQUFRLGFBQWE7QUFBQSxFQUMxQixTQUFTLENBQUMsVUFBVSxHQUFHLFFBQVEsR0FBRyxNQUFNLEdBQUcsS0FBSztBQUFBLElBQzlDLGFBQWE7QUFBQSxNQUNYLE1BQU07QUFBQSxJQUVSO0FBQUEsRUFDRixDQUFDLENBQUM7QUFDSixDQUNBOyIsCiAgIm5hbWVzIjogW10KfQo=
