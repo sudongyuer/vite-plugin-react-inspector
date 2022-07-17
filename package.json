@@ -35,8 +35,8 @@
     "dev": "unbuild --stub",
     "build": "unbuild",
     "test": "vitest",
-    "version": "changeset version",
     "changeset": "changeset add",
+    "version": "changeset version",
     "release": "pnpm run build && pnpm run release:only",
     "release:only": "changeset publish",
     "typecheck": "tsc --noEmit",
@@ -45,6 +45,7 @@
     "try": "tsx src/index.ts"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.23.2",
     "@sudongyuer/eslint-config": "^0.1.3",
     "@types/node": "^18.0.0",
     "eslint": "^8.18.0",
