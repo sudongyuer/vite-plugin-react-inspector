@@ -18,8 +18,9 @@
     "@vitejs/plugin-react": "^1.3.0",
     "typescript": "^4.6.3",
     "vite": "^2.9.9",
-    "vite-plugin-react-inspector": "workspace:*",
+    "vite-plugin-hot-export": "^0.5.2",
     "vite-plugin-inspect": "^0.5.1",
+    "vite-plugin-react-inspector": "workspace:*",
     "vite-plugin-svgr": "^2.2.0"
   }
 }
