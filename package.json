@@ -63,5 +63,10 @@
     "extends": [
       "@sudongyuer"
     ]
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "magic-string": "^0.26.2",
+    "shell-quote": "^1.7.3"
   }
 }
