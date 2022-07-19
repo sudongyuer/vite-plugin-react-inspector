@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
+  "include": ["src", "../vite-plugin-react-inspector/src/index.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
