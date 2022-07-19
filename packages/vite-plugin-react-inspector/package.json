@@ -33,9 +33,6 @@
       ]
     }
   },
-  "bin": {
-    "autoexport": "./node_modules/.bin/autoexport"
-  },
   "files": [
     "dist"
   ],
@@ -52,12 +49,22 @@
     "try": "tsx src/index.ts"
   },
   "dependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/types": "^7.18.9",
     "auto-export": "^0.3.0",
     "chokidar": "^3.5.3",
+    "core": "link:@types/@babel/core",
+    "estree-walker": "^3.0.1",
+    "magic-string": "^0.26.2",
     "unconfig": "^0.3.5"
   },
   "devDependencies": {
     "@sudongyuer/eslint-config": "^0.1.3",
+    "@types/babel-core": "^6.25.7",
+    "@types/babel__core": "^7.1.19",
     "@types/node": "^18.0.0",
     "eslint": "^8.18.0",
     "pnpm": "^7.3.0",
