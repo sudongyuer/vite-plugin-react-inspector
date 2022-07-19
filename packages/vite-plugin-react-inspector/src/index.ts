@@ -1,8 +1,9 @@
-import type { Plugin } from 'vite'
+import type { Connect, Plugin } from 'vite'
 import { parseSync, traverse } from '@babel/core'
 import MagicString from 'magic-string'
 import { parseJSXIdentifier } from './utils'
 import { launchEditor } from './launch-editor'
+import { launchEditorMiddleware, queryParserMiddleware } from './middleWare'
 function VitePluginReactInspector(): Plugin {
   return {
     name: 'vite-plugin-react-inspector',
@@ -41,6 +42,24 @@ function VitePluginReactInspector(): Plugin {
           map: sourceMap,
         }
       }
+    },
+    configureServer: (server) => {
+      type RequestMessage = Parameters<Connect.NextHandleFunction>[0]
+      server.middlewares.use(queryParserMiddleware)
+      server.middlewares.use((req: RequestMessage & { query?: object }, res, next) => {
+        // custom handle request...
+        if (req.url?.startsWith('/__react-inspector-launch-editor')) {
+          const { file } = req?.query as any
+          if (file) {
+            const [filePath, line, column] = file.split(':')
+            launchEditor(filePath, Number(line), Number(column))
+          }
+          next()
+        }
+        else {
+          next()
+        }
+      })
     },
 
   }
