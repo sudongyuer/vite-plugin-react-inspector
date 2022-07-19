@@ -16,7 +16,7 @@ function App() {
           justifyContent: 'center',
           gap: '10px',
         }}>
-      
+
         </p>
         <p>vite-plugin-hot-export</p>
         <p>
