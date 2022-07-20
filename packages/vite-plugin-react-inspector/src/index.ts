@@ -3,7 +3,7 @@ import { parseSync, traverse } from '@babel/core'
 import MagicString from 'magic-string'
 import { parseJSXIdentifier } from './utils'
 import { launchEditor } from './launch-editor'
-import { launchEditorMiddleware, queryParserMiddleware } from './middleWare'
+import { queryParserMiddleware } from './middleWare'
 function VitePluginReactInspector(): Plugin {
   return {
     name: 'vite-plugin-react-inspector',
@@ -61,7 +61,29 @@ function VitePluginReactInspector(): Plugin {
         }
       })
     },
-
+    transformIndexHtml(html) {
+      return {
+        html,
+        tags: [
+          {
+            tag: 'script',
+            injectTo: 'body',
+            attrs: {
+              type: 'module',
+              src: '/node_modules/vite-plugin-react-inspector/src/demo.jsx',
+            },
+          },
+          {
+            tag: 'div',
+            injectTo: 'body',
+            attrs: {
+              type: 'module',
+              src: '/node_modules/vite-plugin-react-inspector/src/demo.js',
+            },
+          },
+        ],
+      }
+    },
   }
 }
 
