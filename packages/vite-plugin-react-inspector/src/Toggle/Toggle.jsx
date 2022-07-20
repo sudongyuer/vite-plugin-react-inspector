@@ -13,9 +13,11 @@ function Toggle() {
   }, [])
   const mousemoveCallback = useCallback((e) => {
     const file = e.target.getAttribute('data-react-inspector')
-    const [filePath, line, column] = file.split(':')
-    setFileDetail({ filePath, line, column })
-    setPotion({ x: e.clientX, y: e.clientY })
+    if (file) {
+      const [filePath, line, column] = file.split(':')
+      setFileDetail({ filePath, line, column })
+      setPotion({ x: e.clientX, y: e.clientY })
+    }
   }, [])
   useEffect(() => {
     if (active) {
