@@ -1,5 +1,4 @@
 import type { Connect } from 'vite'
-import { launchEditor } from './launch-editor'
 export const SERVER_URL = '/__react-inspector-launch-editor'
 
 type RequestMessage = Parameters<Connect.NextHandleFunction>[0]
