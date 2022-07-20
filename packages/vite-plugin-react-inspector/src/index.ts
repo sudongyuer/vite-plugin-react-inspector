@@ -14,6 +14,7 @@ function VitePluginReactInspector(): Plugin {
         const transformedCode = code
         const s = new MagicString(transformedCode)
         const ast = parseSync(code, {
+          configFile: false,
           filename: id,
           ast: true,
           presets: [
@@ -70,15 +71,7 @@ function VitePluginReactInspector(): Plugin {
             injectTo: 'body',
             attrs: {
               type: 'module',
-              src: '/node_modules/vite-plugin-react-inspector/src/demo.jsx',
-            },
-          },
-          {
-            tag: 'div',
-            injectTo: 'body',
-            attrs: {
-              type: 'module',
-              src: '/node_modules/vite-plugin-react-inspector/src/demo.js',
+              src: '/node_modules/vite-plugin-react-inspector/src/inject.jsx',
             },
           },
         ],
