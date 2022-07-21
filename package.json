@@ -36,6 +36,7 @@
     "build": "unbuild",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
+    "changeset": "changeset add",
     "lint": "eslint . --cache",
     "lint-fix": "eslint . --fix",
     "try": "tsx src/index.ts",
