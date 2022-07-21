@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.0.6
+
+### Patch Changes
+
+- 9f759de: update dep
+
 ## 0.0.5
 
 ### Patch Changes
