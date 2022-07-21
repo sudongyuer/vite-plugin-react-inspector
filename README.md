@@ -4,6 +4,7 @@ A plugin to support  inspect react component.
 
 [![NPM version](https://badge.fury.io/js/vite-plugin-react-inspector.svg)](https://www.npmjs.com/package/vite-plugin-react-inspector)
 
+# 【WIP。。。。。】
 
 <p align='center'>
 <img src='' width='200'/>
