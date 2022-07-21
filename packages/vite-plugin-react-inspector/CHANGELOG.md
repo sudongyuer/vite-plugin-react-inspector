@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.0.3
+
+### Patch Changes
+
+- 83dcc1d: update tsconfig.json
+
 ## 0.0.2
 
 ### Patch Changes
