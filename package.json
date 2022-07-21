@@ -35,7 +35,6 @@
     "dev": "unbuild --stub",
     "build": "unbuild",
     "test": "vitest",
-    "changeset": "changeset add",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --cache",
     "lint-fix": "eslint . --fix",
