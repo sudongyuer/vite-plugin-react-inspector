@@ -1,9 +1,9 @@
 import type { Connect, Plugin } from 'vite'
 import { parseSync, traverse } from '@babel/core'
 import MagicString from 'magic-string'
+import { queryParserMiddleware } from './middleware'
 import { parseJSXIdentifier } from './utils'
 import { launchEditor } from './launch-editor'
-import { queryParserMiddleware } from './middleWare'
 function VitePluginReactInspector(): Plugin {
   return {
     name: 'vite-plugin-react-inspector',
