@@ -1,5 +1,15 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import './toggle.css'
+function debounce(fn, delay) {
+  let timer = null
+  return function () {
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      // eslint-disable-next-line prefer-rest-params
+      fn.apply(this, arguments)
+    }, delay)
+  }
+}
 function Toggle() {
   const [active, setActive] = useState(false)
   const [postion, setPotion] = useState({ x: 0, y: 0 })
@@ -22,7 +32,7 @@ function Toggle() {
   useEffect(() => {
     if (active) {
       document.addEventListener('click', eventCallBack)
-      document.addEventListener('mousemove', mousemoveCallback)
+      document.addEventListener('mousemove', debounce(mousemoveCallback))
     }
 
     else {
