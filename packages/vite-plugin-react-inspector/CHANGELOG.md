@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.1.1
+
+### Patch Changes
+
+- e9c0ed8: fix toggle style
+
 ## 0.1.0
 
 ### Minor Changes
