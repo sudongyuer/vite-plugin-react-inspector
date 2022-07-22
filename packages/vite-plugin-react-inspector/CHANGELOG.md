@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.0.7
+
+### Patch Changes
+
+- 518813b: fix toggle event can not pass
+
 ## 0.0.6
 
 ### Patch Changes
