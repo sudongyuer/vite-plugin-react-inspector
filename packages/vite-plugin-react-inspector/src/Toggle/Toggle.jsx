@@ -7,7 +7,6 @@ function Toggle() {
   const [fileDetail, setFileDetail] = useState({ filePath: '', line: 0, column: 0 })
   const { x, y } = postion
   const eventCallBack = useCallback((e) => {
-    e.preventEvent()
     const filePath = e.target.getAttribute('data-react-inspector')
     const SERVER_URL = '/__react-inspector-launch-editor'
     const fetchUrl = `${SERVER_URL}?file=${filePath}`
