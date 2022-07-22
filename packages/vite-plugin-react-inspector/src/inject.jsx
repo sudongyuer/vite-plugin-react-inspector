@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Toggle from './Toggle/Toggle'
+
 const divEle = document.createElement('div')
 divEle.id = 'react-inspector-container'
 divEle.style.position = 'fixed'
