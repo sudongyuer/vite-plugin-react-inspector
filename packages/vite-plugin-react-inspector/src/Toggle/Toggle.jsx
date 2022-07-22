@@ -1,27 +1,20 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import './toggle.css'
-function debounce(fn, delay) {
-  let timer = null
-  return function () {
-    clearTimeout(timer)
-    timer = setTimeout(() => {
-      // eslint-disable-next-line prefer-rest-params
-      fn.apply(this, arguments)
-    }, delay)
-  }
-}
+
 function Toggle() {
   const [active, setActive] = useState(false)
   const [postion, setPotion] = useState({ x: 0, y: 0 })
   const [fileDetail, setFileDetail] = useState({ filePath: '', line: 0, column: 0 })
   const { x, y } = postion
   const eventCallBack = useCallback((e) => {
+    e.preventEvent()
     const filePath = e.target.getAttribute('data-react-inspector')
     const SERVER_URL = '/__react-inspector-launch-editor'
     const fetchUrl = `${SERVER_URL}?file=${filePath}`
     fetch(fetchUrl)
   }, [])
   const mousemoveCallback = useCallback((e) => {
+    e.preventDefault()
     const file = e.target.getAttribute('data-react-inspector')
     if (file) {
       const [filePath, line, column] = file.split(':')
@@ -32,7 +25,7 @@ function Toggle() {
   useEffect(() => {
     if (active) {
       document.addEventListener('click', eventCallBack)
-      document.addEventListener('mousemove', debounce(mousemoveCallback))
+      document.addEventListener('mousemove', mousemoveCallback)
     }
 
     else {
@@ -41,7 +34,7 @@ function Toggle() {
     }
   }, [active])
   useEffect(() => {
-    document.querySelector('.file-detail').addEventListener('mousemove', () => { }, true)
+    document.querySelector('.file-detail').addEventListener('mousemove', () => {}, true)
   }, [])
   function handleChange(e) {
     if (e.target.checked)
