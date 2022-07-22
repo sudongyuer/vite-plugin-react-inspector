@@ -1,5 +1,15 @@
 # vite-plugin-react-inspector
 
+## 0.1.0
+
+### Minor Changes
+
+- 9cf21db: style: update toggle style
+
+### Patch Changes
+
+- 9990dda: optimize
+
 ## 0.0.8
 
 ### Patch Changes
