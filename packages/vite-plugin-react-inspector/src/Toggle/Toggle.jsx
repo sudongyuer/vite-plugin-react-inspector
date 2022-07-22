@@ -40,6 +40,9 @@ function Toggle() {
       document.removeEventListener('mousemove', mousemoveCallback)
     }
   }, [active])
+  useEffect(() => {
+    document.querySelector('.file-detail').addEventListener('mousemove', () => { }, true)
+  }, [])
   function handleChange(e) {
     if (e.target.checked)
       setActive(false)
@@ -74,7 +77,7 @@ function Toggle() {
         visibility: `${active ? 'visible' : 'hidden'}`,
         top: `${y}px`,
         left: `${x}px`,
-        transform: 'translateX(-50%)',
+        pointerEvents: 'none',
       }}>
         <div
           style={{
