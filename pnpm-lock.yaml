@@ -35,7 +35,7 @@ importers:
       vite: 2.9.14
       vitest: 0.15.2
 
-  packages/react-project-17:
+  packages/project-react-17:
     specifiers:
       '@types/react': ^17.0.0
       '@types/react-dom': ^17.0.0
@@ -62,7 +62,7 @@ importers:
       vite-plugin-react-inspector: link:../vite-plugin-react-inspector
       vite-plugin-svgr: 2.2.0_vite@2.9.14
 
-  packages/react-project-18:
+  packages/project-react-18:
     specifiers:
       '@types/react': ^18.0.0
       '@types/react-dom': ^18.0.0
@@ -276,6 +276,10 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': 7.18.9
+<<<<<<< HEAD
+    dev: false
+=======
+>>>>>>> 85a15590ad7779a8d8639b8740a13deead9f502a
 
   /@babel/helper-function-name/7.18.9:
     resolution: {integrity: sha512-fJgWlZt7nxGksJS9a0XdSaI4XvpExnNIgRP+rVefWh5U7BL8pPuir6SJUmFKRfjWQ51OtWSzwOxhaH/EBWWc0A==}

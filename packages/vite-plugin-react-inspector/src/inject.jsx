@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import reactDOM from 'react-dom'
 import Toggle from './Toggle/Toggle'
 
 const divEle = document.createElement('div')
@@ -12,6 +12,10 @@ divEle.style.zIndex = '9999'
 document.body.appendChild(divEle)
 
 const domContainer = document.querySelector('#react-inspector-container')
-ReactDOM.createRoot(domContainer).render(
-  <Toggle />,
-)
+
+// react 18.x use reactDOM.render has console.error
+const error = console.error
+console.error = () => { }
+// react version compatible
+reactDOM.render(<Toggle />, domContainer)
+console.error = error
