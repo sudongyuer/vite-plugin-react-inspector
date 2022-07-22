@@ -1,5 +1,12 @@
 # vite-plugin-react-inspector
 
+## 0.0.8
+
+### Patch Changes
+
+- 2c883ec: change pnpm-lock.yaml
+- 2c883ec: support <react17 & react18
+
 ## 0.0.7
 
 ### Patch Changes
