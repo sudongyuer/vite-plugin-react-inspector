@@ -27,7 +27,7 @@
 }
 
 .toggle:before {
-  content: 'Open';
+  content: '';
   position: absolute;
   left: -50px;
   top: 15px;
@@ -35,7 +35,7 @@
 }
 
 .toggle:after {
-  content: 'Close';
+  content: '';
   position: absolute;
   right: -48px;
   top: 15px;
@@ -227,7 +227,9 @@ input:checked + .toggle .star--6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  max-width: 400px;
+  text-align: center;
+  white-space: normal;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
