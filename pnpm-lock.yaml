@@ -79,6 +79,8 @@ importers:
       estree-walker: ^3.0.1
       magic-string: ^0.26.2
       pnpm: ^7.3.0
+      react: ^18.0.0
+      react-dom: ^18.0.0
       shell-quote: ^1.7.3
       tsx: ^3.6.0
       typescript: ^4.7.4
@@ -97,6 +99,8 @@ importers:
       chokidar: 3.5.3
       estree-walker: 3.0.1
       magic-string: 0.26.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
       shell-quote: 1.7.3
       unconfig: 0.3.5
     devDependencies:

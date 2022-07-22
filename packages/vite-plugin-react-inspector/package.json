@@ -59,6 +59,8 @@
     "chokidar": "^3.5.3",
     "estree-walker": "^3.0.1",
     "magic-string": "^0.26.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "shell-quote": "^1.7.3",
     "unconfig": "^0.3.5"
   },
