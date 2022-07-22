@@ -276,10 +276,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': 7.18.9
-<<<<<<< HEAD
     dev: false
-=======
->>>>>>> 85a15590ad7779a8d8639b8740a13deead9f502a
 
   /@babel/helper-function-name/7.18.9:
     resolution: {integrity: sha512-fJgWlZt7nxGksJS9a0XdSaI4XvpExnNIgRP+rVefWh5U7BL8pPuir6SJUmFKRfjWQ51OtWSzwOxhaH/EBWWc0A==}
