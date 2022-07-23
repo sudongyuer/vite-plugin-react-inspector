@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import Draggable from 'react-draggable'
+import * as Draggable from 'react-draggable'
 import './toggle.css'
 function Toggle() {
   const [active, setActive] = useState(false)
