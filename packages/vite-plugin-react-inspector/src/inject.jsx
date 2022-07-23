@@ -5,7 +5,7 @@ import Toggle from './Toggle/Toggle'
 const divEle = document.createElement('div')
 divEle.id = 'react-inspector-container'
 divEle.style.position = 'fixed'
-divEle.style.top = '30px'
+divEle.style.top = '40px'
 divEle.style.right = '100px'
 divEle.style.backgroundColor = '#ccc'
 divEle.style.zIndex = '9999'
