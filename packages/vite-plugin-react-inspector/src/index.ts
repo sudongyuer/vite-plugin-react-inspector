@@ -9,6 +9,13 @@ function VitePluginReactInspector(): Plugin {
     name: 'vite-plugin-react-inspector',
     enforce: 'pre',
     apply: 'serve',
+    config: () => {
+      return {
+        optimizeDeps: {
+          include: ['react-dom'],
+        },
+      }
+    },
     transform: (code, id) => {
       if (id.endsWith('.tsx')) {
         const transformedCode = code
