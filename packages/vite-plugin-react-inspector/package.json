@@ -48,6 +48,9 @@
     "lint-fix": "eslint . --fix",
     "try": "tsx src/index.ts"
   },
+  "peerDependencies": {
+    "react-draggable": "^4.4.5"
+  },
   "dependencies": {
     "@babel/core": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
@@ -61,7 +64,6 @@
     "magic-string": "^0.26.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-draggable": "^4.4.5",
     "shell-quote": "^1.7.3",
     "unconfig": "^0.3.5"
   },
