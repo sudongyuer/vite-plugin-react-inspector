@@ -12,7 +12,7 @@ function VitePluginReactInspector(): Plugin {
     config: () => {
       return {
         optimizeDeps: {
-          include: ['react-dom'],
+          include: ['react-dom', 'react-draggable'],
         },
       }
     },
