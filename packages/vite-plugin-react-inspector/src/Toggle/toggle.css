@@ -6,6 +6,10 @@
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px
 }
 
 .toggleWrapper input {
