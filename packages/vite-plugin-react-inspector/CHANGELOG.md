@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.2.1
+
+### Patch Changes
+
+- f9dc860: update
+
 ## 0.2.0
 
 ### Minor Changes
