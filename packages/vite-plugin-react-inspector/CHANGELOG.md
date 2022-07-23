@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.2.0
+
+### Minor Changes
+
+- 6e45dd4: docs: update README.md
+
 ## 0.1.1
 
 ### Patch Changes
