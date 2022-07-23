@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.2.4
+
+### Patch Changes
+
+- cd243e3: fix react 18.2 compatibility
+
 ## 0.2.3
 
 ### Patch Changes
