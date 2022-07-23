@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.2.2
+
+### Patch Changes
+
+- 5974289: update
+
 ## 0.2.1
 
 ### Patch Changes
