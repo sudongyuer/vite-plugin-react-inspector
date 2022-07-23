@@ -6,7 +6,7 @@ import ReactInspector from 'vite-plugin-react-inspector'
 import svgr from 'vite-plugin-svgr'
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [ReactInspector(), Inspect(), react(), svgr({
+  plugins: [ReactInspector(), HotExport(), Inspect(), react(), svgr({
     svgrOptions: {
       icon: true,
       // ...svgr options (https://react-svgr.com/docs/options/)
