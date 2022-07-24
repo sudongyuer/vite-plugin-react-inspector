@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.2.8
+
+### Patch Changes
+
+- 071e6a0: test react draggable
+
 ## 0.2.7
 
 ### Patch Changes
