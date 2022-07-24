@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.3.1
+
+### Patch Changes
+
+- a7f8689: support jsx
+
 ## 0.3.0
 
 ### Minor Changes
