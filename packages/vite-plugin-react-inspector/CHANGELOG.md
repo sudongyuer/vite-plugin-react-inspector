@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.2.9
+
+### Patch Changes
+
+- 5d28b79: chore:update deps
+
 ## 0.2.8
 
 ### Patch Changes
