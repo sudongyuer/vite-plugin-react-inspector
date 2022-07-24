@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import Draggable from 'react-draggable'
 import './toggle.css'
 function Toggle() {
   const [active, setActive] = useState(false)
@@ -32,8 +31,14 @@ function Toggle() {
       document.removeEventListener('mousemove', mousemoveCallback)
     }
   }, [active])
+
   useEffect(() => {
-    document.querySelector('.file-detail').addEventListener('mousemove', () => {}, true)
+    const dragElement = document.getElementById('drag-element')
+    dragElement.addEventListener('dragend', (e) => {
+      e.preventDefault()
+      dragElement.style.top = `${e.clientY}px`
+      dragElement.style.left = `${e.clientX}px`
+    })
   }, [])
   function handleChange(e) {
     if (e.target.checked)
@@ -44,31 +49,25 @@ function Toggle() {
   }
   return (
     <div>
-      <Draggable
-        handle=".handle"
-      >
-        <div>
-          <div className="toggleWrapper">
-            <div className="handle">
-              Drag here
-            </div>
-            <input type="checkbox" defaultChecked="false" className="dn" id="dn" onChange={handleChange}/>
-            <label htmlFor="dn" className="toggle">
-              <span className="toggle__handler">
-                <span className="crater crater--1"></span>
-                <span className="crater crater--2"></span>
-                <span className="crater crater--3"></span>
-              </span>
-              <span className="star star--1"></span>
-              <span className="star star--2"></span>
-              <span className="star star--3"></span>
-              <span className="star star--4"></span>
-              <span className="star star--5"></span>
-              <span className="star star--6"></span>
-            </label>
-          </div>
+      <div className="toggleWrapper" draggable="true" id="drag-element">
+        <div className="handle">
+          Drag here
         </div>
-      </Draggable>
+        <input type="checkbox" defaultChecked="false" className="dn" id="dn" onChange={handleChange}/>
+        <label htmlFor="dn" className="toggle">
+          <span className="toggle__handler">
+            <span className="crater crater--1"></span>
+            <span className="crater crater--2"></span>
+            <span className="crater crater--3"></span>
+          </span>
+          <span className="star star--1"></span>
+          <span className="star star--2"></span>
+          <span className="star star--3"></span>
+          <span className="star star--4"></span>
+          <span className="star star--5"></span>
+          <span className="star star--6"></span>
+        </label>
+      </div>
       <div className="file-detail" style={{
         visibility: `${active ? 'visible' : 'hidden'}`,
         top: `${y}px`,
