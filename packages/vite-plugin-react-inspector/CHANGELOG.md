@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.2.10
+
+### Patch Changes
+
+- 0f3cab7: remove react drag
+
 ## 0.2.9
 
 ### Patch Changes
