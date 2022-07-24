@@ -1,8 +1,7 @@
 .toggleWrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  right: 50px;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   color: white;
@@ -239,4 +238,8 @@ input:checked + .toggle .star--6 {
   padding: 10px;
   margin-top: 20px;
   z-index: 9999999;
+}
+.handle{
+  white-space: nowrap;
+  color: #749dd6;
 }
