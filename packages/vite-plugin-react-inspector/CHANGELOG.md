@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.3.0
+
+### Minor Changes
+
+- eb71eab: release v0.3.0
+
 ## 0.2.10
 
 ### Patch Changes
