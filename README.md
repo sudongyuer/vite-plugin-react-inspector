@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-<a href="https://stackblitz.com/edit/vitejs-vite-te3qgo?file=vite.config.ts&terminal=dev"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
+<a href="https://stackblitz.com/edit/vitejs-vite-1mazom?file=src/App.tsx"><img src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" alt=""></a>
 </p>
 
 ## 👀 Why 
@@ -29,7 +29,7 @@ This vite plugin allows users to jump to local IDE code directly from browser Re
 
 
 <p align="center">
-<img src="https://github.com/sudongyuer/vite-plugin-vue-inspector/blob/main/docs/images/vite-plugin-vue-inspector.gif" alt="vite-plugin-vue-inspector">
+<img src="https://git.poker/sudongyuer/image-bed/blob/master/20220724/vite-plugin-react-inspector.gif?raw=true" alt="vite-plugin-vue-inspector">
 </p>
 
 ## 📦 Installation

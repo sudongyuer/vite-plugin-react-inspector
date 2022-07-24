@@ -11,6 +11,10 @@
   gap:5px
 }
 
+#dn{
+  display: none;
+}
+
 .toggleWrapper input {
   position: absolute;
   left: -99em;
@@ -229,7 +233,7 @@ input:checked + .toggle .star--6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
+  width: 300px;
   text-align: center;
   white-space: normal;
   background-color: rgba(255, 255, 255, 0.3);
@@ -238,6 +242,7 @@ input:checked + .toggle .star--6 {
   padding: 10px;
   margin-top: 20px;
   z-index: 9999999;
+  transform: translate(-50%, 0);
 }
 .handle{
   white-space: nowrap;
