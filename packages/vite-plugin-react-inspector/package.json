@@ -61,7 +61,6 @@
     "magic-string": "^0.26.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-draggable": "^4.4.5",
     "shell-quote": "^1.7.3",
     "unconfig": "^0.3.5"
   },
@@ -76,6 +75,9 @@
     "unbuild": "^0.7.4",
     "vite": "^2.9.12",
     "vitest": "^0.15.2"
+  },
+  "peerDependencies": {
+    "react-draggable": "^4.4.5"
   },
   "eslintConfig": {
     "extends": [
