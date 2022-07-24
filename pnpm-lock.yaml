@@ -108,7 +108,6 @@ importers:
       pnpm: ^7.3.0
       react: ^18.0.0
       react-dom: ^18.0.0
-      react-draggable: ^4.4.5
       shell-quote: ^1.7.3
       tsx: ^3.6.0
       typescript: ^4.7.4
@@ -129,7 +128,6 @@ importers:
       magic-string: 0.26.2
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-draggable: 4.4.5_react-dom@18.2.0+react@18.2.0
       shell-quote: 1.7.3
       unconfig: 0.3.5
     devDependencies:
@@ -2650,11 +2648,6 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
-  /clsx/1.2.1:
-    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
-    engines: {node: '>=6'}
-    dev: false
-
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -4737,6 +4730,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
+    dev: true
 
   /pseudomap/1.0.2:
     resolution: {integrity: sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ==}
@@ -4777,20 +4771,9 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-draggable/4.4.5_react-dom@18.2.0+react@18.2.0:
-    resolution: {integrity: sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==}
-    peerDependencies:
-      react: '>= 16.3.0'
-      react-dom: '>= 16.3.0'
-    dependencies:
-      clsx: 1.2.1
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: false
-
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: true
 
   /react-refresh/0.13.0:
     resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
