@@ -87,7 +87,6 @@ For example, if you want it always open VSCode when inspection clicked, set `exp
   export REACT_EDITOR=code
   ```
 
-<br />
 
 ### WebStorm  
 
@@ -107,7 +106,6 @@ For example, if you want it always open VSCode when inspection clicked, set `exp
   export REACT_EDITOR=webstorm
   ```
 
-<br />
 
 ### Vim
 
