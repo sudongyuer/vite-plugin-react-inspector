@@ -17,7 +17,8 @@ function VitePluginReactInspector(): Plugin {
       }
     },
     transform: (code, id) => {
-      if (id.endsWith('.tsx')) {
+      const selfFileRegex = /vite-plugin-react-inspector\/src\/Toggle/
+      if ((id.endsWith('.tsx') || id.endsWith('.jsx')) && !selfFileRegex.test(id)) {
         const transformedCode = code
         const s = new MagicString(transformedCode)
         const ast = parseSync(code, {
