@@ -64,11 +64,8 @@ function VitePluginReactInspector(): Plugin {
             console.log({ filePath })
             launchEditor(filePath, Number(line), Number(column))
           }
-          next()
         }
-        else {
-          next()
-        }
+        next()
       })
     },
     transformIndexHtml(html) {
