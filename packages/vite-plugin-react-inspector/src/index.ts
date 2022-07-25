@@ -61,7 +61,6 @@ function VitePluginReactInspector(): Plugin {
           const { file } = req?.query as any
           if (file) {
             const [filePath, line, column] = parseFilePath(file)
-            console.log({ filePath })
             launchEditor(filePath, Number(line), Number(column))
           }
         }
