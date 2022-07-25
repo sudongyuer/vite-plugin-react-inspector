@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.3.2
+
+### Patch Changes
+
+- fe73cb6: fix: fix windows platform path error && remove rendundancy code
+
 ## 0.3.1
 
 ### Patch Changes
