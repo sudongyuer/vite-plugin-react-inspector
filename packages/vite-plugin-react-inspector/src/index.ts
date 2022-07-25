@@ -2,7 +2,7 @@ import type { Connect, Plugin } from 'vite'
 import { parseSync, traverse } from '@babel/core'
 import MagicString from 'magic-string'
 import { queryParserMiddleware } from './middleware'
-import { parseJSXIdentifier } from './utils'
+import { parseFilePath, parseJSXIdentifier } from './utils'
 import { launchEditor } from './launch-editor'
 function VitePluginReactInspector(): Plugin {
   return {
@@ -60,14 +60,11 @@ function VitePluginReactInspector(): Plugin {
         if (req.url?.startsWith('/__react-inspector-launch-editor')) {
           const { file } = req?.query as any
           if (file) {
-            const [filePath, line, column] = file.split(':')
+            const [filePath, line, column] = parseFilePath(file)
             launchEditor(filePath, Number(line), Number(column))
           }
-          next()
         }
-        else {
-          next()
-        }
+        next()
       })
     },
     transformIndexHtml(html) {
