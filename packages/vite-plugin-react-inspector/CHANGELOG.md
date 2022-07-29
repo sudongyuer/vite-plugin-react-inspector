@@ -1,5 +1,11 @@
 # vite-plugin-react-inspector
 
+## 0.3.3
+
+### Patch Changes
+
+- 715c692: fix: react fragment error
+
 ## 0.3.2
 
 ### Patch Changes
