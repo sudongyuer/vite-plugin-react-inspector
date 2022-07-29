@@ -34,6 +34,11 @@ function VitePluginReactInspector(): Plugin {
         traverse(ast, {
           enter({ node }) {
             if (node.type === 'JSXElement') {
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-expect-error
+              if (node?.openingElement?.name?.object?.name === 'React')
+                return
+
               const { start } = node
               const { column, line } = node?.loc?.start as any
               const toInsertPosition = start + parseJSXIdentifier(node.openingElement.name as any).length + 1
