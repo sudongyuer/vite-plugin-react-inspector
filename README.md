@@ -1,6 +1,6 @@
 
 <p align="center">
-<a href="https://github.com/sudongyuer/vite-plugin-vue-inspector"><img src="https://git.poker/sudongyuer/image-bed/blob/master/vite-plugin-react-inspector.png?raw=true" width='200'/></a>
+<a href="https://github.com/sudongyuer/vite-plugin-vue-inspector"><img src="https://cdn.staticaly.com/gh/sudongyuer/image-bed@master/vite-plugin-react-inspector.png?raw=true" width='200'/></a>
 </p>
 
 <p align="center">
