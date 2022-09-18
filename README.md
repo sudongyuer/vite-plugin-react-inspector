@@ -29,7 +29,7 @@ This vite plugin allows users to jump to local IDE code directly from browser Re
 
 
 <p align="center">
-<img src="https://git.poker/sudongyuer/image-bed/blob/master/20220724/vite-plugin-react-inspector.gif?raw=true" alt="vite-plugin-vue-inspector">
+<img src="https://cdn.staticaly.com/gh/sudongyuer/image-bed@master/20220724/vite-plugin-react-inspector.gif" alt="vite-plugin-vue-inspector">
 </p>
 
 ## 📦 Installation
